@@ -11,15 +11,8 @@ dotenv.config();
 type LogLevel = 'error' | 'info' | 'warn' | 'debug';
 
 export default class Logger {
-    private static buildLogger({
-                                   parseArgs = true,
-                                   logInConsole = true,
-                               }: {
-        parseArgs?: boolean;
-        logInConsole?: boolean;
-    }): winston.Logger {
+    private static buildLogger({parseArgs = true, logInConsole = true,}: { parseArgs?: boolean; logInConsole?: boolean; }): winston.Logger {
         const logPath = path.join(__dirname, '..', '..', 'logs');
-
         const errorTransport = Logger.getErrorTransport(logPath);
         const infoTransport = Logger.getInfoTransport(logPath);
         const debugTransport = Logger.getDebugTransport(logPath);

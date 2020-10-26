@@ -5,7 +5,8 @@ import env from '../../../env';
 import createError from 'http-errors';
 import { createUser, getUserByEmail } from '../../../db/user';
 import generateJwt from './_generateJwt';
-
+import Logger from '../../../lib/logger';
+const logger = new Logger();
 
 
 const emailTemplate = ({ userName, link }: { userName: string, link: string }) => `
@@ -40,12 +41,12 @@ transporter.verify(function (error: any, success: any) {
 
 
 const login = (req: Request, res: Response, next: NextFunction) => {
+    logger.info(`>>>>>> Come in loginSendMailSaveUser controller`);
     const { email } = req.body;
 
     if (!email) {
         return next(createError(400, 'Email and lastLocation is required'));
     }
-
 
     return (async () => {
         const token = generateJwt(email, 2);
@@ -64,6 +65,8 @@ const login = (req: Request, res: Response, next: NextFunction) => {
 
         try { const newUser = await createUser(token, email); }
         catch { return next(createError(403, 'User in not create')) }
+
+        logger.info(`<<<<<< Come out loginSendMailSaveUser controller`);
 
         try { return await res.status(HttpStatus.OK).send('OK'); }
         catch (e) { return next(createError(403, 'Bed request')) }

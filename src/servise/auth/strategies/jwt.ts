@@ -1,8 +1,9 @@
 import passport from 'passport';
 import passportJWT from "passport-jwt";
-import { jwtSecret } from '../../../env';
-import { getUserByEmail } from '../../../db/user';
+import {jwtSecret} from '../../../env';
+import {getUserByEmail} from '../../../db/user';
 import ExtractJwt = passportJWT.ExtractJwt;
+
 const JWTStrategy = passportJWT.Strategy;
 
 
@@ -16,13 +17,9 @@ const strategy = () => {
     passport.use(new JWTStrategy(jwtOptions,
         (jwtPayload: any, done: any) => {
             console.log('jwtPayload');
-            let email;
-           /*  if (!jwtPayload.email) {
-                email = 'emailIsNull';
-            }
-            else {
-            } */
-            email = jwtPayload.email;
+            console.log(jwtPayload);
+
+            const email = jwtPayload.email;
             return (async () => {
                 try {
                     const user = await getUserByEmail(email);
@@ -31,11 +28,9 @@ const strategy = () => {
                         return done(null, user);
                     }
                     return done(null, false);
-                }
-                catch (err) {
+                } catch (err) {
                     return done(err)
                 }
-
             })()
         }
     ));

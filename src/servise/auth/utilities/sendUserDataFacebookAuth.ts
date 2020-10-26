@@ -3,10 +3,11 @@ import createError from 'http-errors';
 import axios from 'axios';
 import { getUserByEmail, getUserByIdAndUpdateFromProvider, createUserFromProvider } from '../../../db/user';
 import generateJwt from './_generateJwt';
-
+import Logger from '../../../lib/logger';
+const logger = new Logger();
 
 const sendUserDataFacebookAuth = async (req: Request, res: Response, next: NextFunction) => {
-    console.group('facebook');
+    logger.info(`>>>>>> Come in sendUserDataFacebookAuth controller`);
     if (req.body.access_token) {
         const access_token = req.body.access_token;
         let data;
@@ -37,7 +38,6 @@ const sendUserDataFacebookAuth = async (req: Request, res: Response, next: NextF
 
         if (user) {
             try {
-
                 const userUpdate = await getUserByIdAndUpdateFromProvider({
                     id: user._id,
                     jwt: (jwt as string),
@@ -48,6 +48,7 @@ const sendUserDataFacebookAuth = async (req: Request, res: Response, next: NextF
                     picture: `http://graph.facebook.com/${data['id']}/picture?type=normal`,
 
                 });
+                logger.info(`<<<<<< Come out sendUserDataFacebookAuth_1 controller`);
                 res.send(userUpdate);
             } catch { return next(createError(403, 'error occurred when getUserByIdAndUpdateFromProvider ')); }
         }
@@ -65,6 +66,7 @@ const sendUserDataFacebookAuth = async (req: Request, res: Response, next: NextF
                 });
                 console.log('userProvider');
                 console.log(userProvider);
+                logger.info(`<<<<<< Come out sendUserDataFacebookAuth_2 controller`);
                 res.send(userProvider);
             } catch { return next(createError(403, 'error occured in func createUserFromProvider')); }
         }

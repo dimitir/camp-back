@@ -1,0 +1,34 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 90
+    },
+    "auditLog": "C:\\projects\\camp-back\\logs\\warn\\.e6d017aed8e25681f93b3c7b0721ffad8472bcad-audit.json",
+    "files": [
+        {
+            "date": 1603112970055,
+            "name": "C:\\projects\\camp-back\\logs\\warn\\warn-19-10-2020.log",
+            "hash": "22028f029d51076ae99e0f9ba7e3508d"
+        },
+        {
+            "date": 1603188126367,
+            "name": "C:\\projects\\camp-back\\logs\\warn\\warn-20-10-2020.log",
+            "hash": "a3f99727e4f586c31f4431be7185358d"
+        },
+        {
+            "date": 1603268496333,
+            "name": "C:\\projects\\camp-back\\logs\\warn\\warn-21-10-2020.log",
+            "hash": "a6722e968d22bdab754e3796bf6d4d4c"
+        },
+        {
+            "date": 1603354516311,
+            "name": "C:\\projects\\camp-back\\logs\\warn\\warn-22-10-2020.log",
+            "hash": "0dd58326fa588341cff24e0fb222d981"
+        },
+        {
+            "date": 1603436194370,
+            "name": "C:\\projects\\camp-back\\logs\\warn\\warn-23-10-2020.log",
+            "hash": "703c6e47bdd38502b225710fe484bc49"
+        }
+    ]
+}

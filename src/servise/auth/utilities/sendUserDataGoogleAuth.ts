@@ -4,10 +4,11 @@ import createError from 'http-errors';
 import env from '../../../env';
 import { getUserByEmail, getUserByIdAndUpdateFromProvider, createUserFromProvider } from '../../../db/user';
 import generateJwt from './_generateJwt';
-
+import Logger from '../../../lib/logger';
+const logger = new Logger();
 
 const sendUserDataGoogleAuth = async (req: Request, res: Response, next: NextFunction) => {
-
+    logger.info(`>>>>>> Come in sendUserDataGoogleAuth controller`);
     if (req.body.tokenId) {
         const client = new OAuth2Client(env.googleId);
         let payload: any;
@@ -43,6 +44,7 @@ const sendUserDataGoogleAuth = async (req: Request, res: Response, next: NextFun
                     lastName: payload['family_name'],
                     picture: (payload['picture'] as string),
                 });
+                logger.info(`<<<<<< Come out sendUserDataGoogleAuth_1 controller`);
                 res.send(userUpdate);
             } catch { return next(createError(403, 'error occurred when getUserByIdAndUpdateFromProvider ')); }
         }
@@ -58,6 +60,7 @@ const sendUserDataGoogleAuth = async (req: Request, res: Response, next: NextFun
                     lastName: (payload['family_name'] as string),
                     picture: (payload['picture'] as string),
                 });
+                logger.info(`<<<<<< Come out sendUserDataGoogleAuth_2 controller`);
                 res.send(userProvider);
             } catch { return next(createError(403, 'error occured in func createUserFromProvider')); }
         }

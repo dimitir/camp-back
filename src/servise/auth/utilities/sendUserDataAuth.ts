@@ -3,8 +3,13 @@ import createError from 'http-errors';
 import jwt from 'jsonwebtoken';
 import env from '../../../env';
 import { getUserByEmail } from '../../../db/user';
+import Logger from '../../../lib/logger';
+const logger = new Logger();
+
 
 const sendUserDataAuth = (req: Request, res: Response, next: NextFunction) => {
+    logger.info(`>>>>>> Come in sendUserDataAuth controller`);
+
     const token = req.body.token;
     console.log('token');
     if (!token) {
@@ -15,7 +20,8 @@ const sendUserDataAuth = (req: Request, res: Response, next: NextFunction) => {
         const email = decoded.email;
         (async () => {
             try {
-                const user = await getUserByEmail(email)
+                const user = await getUserByEmail(email);
+                logger.info(`<<<<<< Come out sendUserDataAuth controller`);
                 res.send(user);
             }
             catch{

@@ -5,16 +5,14 @@ import HttpStatus from 'http-status-codes';
 import { createHike } from '../../../db/hike';
 import { getUserByEmail, getUserByEmailAndUpdateLead } from '../../../db/user';
 import { TypeHike, TypeHikeWrapper } from '../../../db/hike/Types';
-
-
-
+import Logger from '../../../lib/logger';
+const logger = new Logger();
 
 
 const _addHikeToHikeDoc = async (hike: TypeHike) => {
     try { return await createHike(hike); }
     catch{ return createError(403, 'createHike failure') }
 }
-
 
 const _addHikeIdToUserLeader = async (hikeId: string, leadEmail: string) => {
     try {
@@ -29,10 +27,8 @@ const _addHikeIdToUserLeader = async (hikeId: string, leadEmail: string) => {
 }
 
 
-
-
-
 const addHike = async (req: Request, res: Response, next: NextFunction) => {
+    logger.info(`>>>>>> Come in addHike controller`);
     const { hike } = req.body;
     let newHike;
     try {
@@ -46,10 +42,10 @@ const addHike = async (req: Request, res: Response, next: NextFunction) => {
     try { newUser = await _addHikeIdToUserLeader(newHike._id, hike.leaderEmail) }
     catch{ return next(newUser); }
 
+    logger.info(`<<<<<< Come out addHike controller`);
+
     try { return await res.status(HttpStatus.OK).send('OK'); }
     catch (e) { return next(createError(403, 'Bed request addHike')) }
-
 }
-
 
 export default addHike;

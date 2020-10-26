@@ -4,9 +4,12 @@ import generateJwt from './_generateJwt';
 import createError from 'http-errors';
 import env from '../../../env';
 import {getUserByEmail, getUserByIdAndUpdate} from '../../../db/user';
+import Logger from '../../../lib/logger';
+const logger = new Logger();
+
 
 const isAuthorized = (req: Request, res: Response, next: NextFunction) => {
-
+    logger.info(`>>>>>> Come in isAuthorized controller`);
     const auth  = req.query.auth;
 
     if (!auth || !(auth as string).startsWith('Bearer_')) {
@@ -48,9 +51,10 @@ const isAuthorized = (req: Request, res: Response, next: NextFunction) => {
                 const id = findUser._id;
                 const authTrue: boolean = true;
                 const setData = await getUserByIdAndUpdate(id, newJwt);
+                logger.info(`<<<<<< Come out isAuthorized_1 controller`);
                 res.redirect(`${env.hostFront}/auth/email/callback?token=${newJwt}`);
-
             }
+            logger.info(`<<<<<< Come out isAuthorized_2 controller`);
         } catch {
             return next(createError(403, 'Failed to update user'));
         }

@@ -17,6 +17,8 @@ const Hike = new mongoose.Schema({
   teamInfo: String,
   participants: Array,
   leaderEmail: String,
+  tents: Array,
+  equipments: Array
 });
 
 export const HikeSchema = mongoose.model("hike", Hike);
