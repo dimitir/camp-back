@@ -20,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../camp-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seatsnet_mobile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,6 +52,7 @@
       <workItem from="1602850610128" duration="12177000" />
       <workItem from="1603087253440" duration="84975000" />
       <workItem from="1603704832350" duration="1387000" />
+      <workItem from="1603805103605" duration="3183000" />
     </task>
     <servers />
   </component>
@@ -63,10 +64,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2543" y="225" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603190547439" />
-    <state x="686" y="226" key="FileChooserDialogImpl" timestamp="1603713906817">
+    <state x="686" y="226" key="FileChooserDialogImpl" timestamp="1603811354667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="686" y="226" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603713906817" />
+    <state x="686" y="226" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603811354667" />
     <state x="2606" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297404346" />
     <state width="1891" height="279" key="GridCell.Tab.0.bottom" timestamp="1603441172298">
       <screen x="1920" y="0" width="1920" height="1080" />
