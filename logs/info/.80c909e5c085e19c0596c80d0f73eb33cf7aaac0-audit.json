@@ -6,29 +6,24 @@
     "auditLog": "C:\\projects\\camp-back\\logs\\info\\.80c909e5c085e19c0596c80d0f73eb33cf7aaac0-audit.json",
     "files": [
         {
-            "date": 1603112970051,
-            "name": "C:\\projects\\camp-back\\logs\\info\\info-19-10-2020.log",
-            "hash": "2a60245e21573f4d2206508bf4c8ab79"
+            "date": 1612194879300,
+            "name": "C:\\projects\\camp-back\\logs\\info\\info-01-02-2021.log",
+            "hash": "5905620106ed689bdc06b57349d5eeff"
         },
         {
-            "date": 1603185534667,
-            "name": "C:\\projects\\camp-back\\logs\\info\\info-20-10-2020.log",
-            "hash": "0656dab645b857c89ce8232ecb784b0d"
+            "date": 1612256227036,
+            "name": "C:\\projects\\camp-back\\logs\\info\\info-02-02-2021.log",
+            "hash": "747598088009c13f58802ec09edb1179"
         },
         {
-            "date": 1603268496344,
-            "name": "C:\\projects\\camp-back\\logs\\info\\info-21-10-2020.log",
-            "hash": "1207d70d0d9b4080da991f0dfc296e69"
+            "date": 1612341216862,
+            "name": "C:\\projects\\camp-back\\logs\\info\\info-03-02-2021.log",
+            "hash": "af725d7cdbfd263716002d080ce30fe0"
         },
         {
-            "date": 1603354516306,
-            "name": "C:\\projects\\camp-back\\logs\\info\\info-22-10-2020.log",
-            "hash": "df5597bf89a50e33574d6d3eee1ae267"
-        },
-        {
-            "date": 1603436194365,
-            "name": "C:\\projects\\camp-back\\logs\\info\\info-23-10-2020.log",
-            "hash": "53c6f3e6639c56d21c3e43c1e7b6d2ec"
+            "date": 1612425512304,
+            "name": "C:\\projects\\camp-back\\logs\\info\\info-04-02-2021.log",
+            "hash": "b0e9353b5cbea016b8a4d3fffd2bafbd"
         }
     ]
 }

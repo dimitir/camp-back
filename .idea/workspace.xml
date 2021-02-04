@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="00589534-89fc-4447-94f9-56808dbd004a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug/.1b8f6c27fbcca1fa1079e385c95ed4972b1cc5f7-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug/.1b8f6c27fbcca1fa1079e385c95ed4972b1cc5f7-audit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error/.fb84d46ed216cce07157da36da03f61a14fd09af-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error/.fb84d46ed216cce07157da36da03f61a14fd09af-audit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info/.80c909e5c085e19c0596c80d0f73eb33cf7aaac0-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info/.80c909e5c085e19c0596c80d0f73eb33cf7aaac0-audit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/warn/.e6d017aed8e25681f93b3c7b0721ffad8472bcad-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/warn/.e6d017aed8e25681f93b3c7b0721ffad8472bcad-audit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servise/test/routs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/servise/test/routs.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seatsnet_mobile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../camp-front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +59,8 @@
       <workItem from="1603087253440" duration="84975000" />
       <workItem from="1603704832350" duration="1387000" />
       <workItem from="1603805103605" duration="3183000" />
+      <workItem from="1603903243726" duration="2335000" />
+      <workItem from="1603905787348" duration="2979000" />
     </task>
     <servers />
   </component>
@@ -64,10 +72,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2543" y="225" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603190547439" />
-    <state x="686" y="226" key="FileChooserDialogImpl" timestamp="1603811354667">
+    <state x="686" y="226" key="FileChooserDialogImpl" timestamp="1603906595980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="686" y="226" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603811354667" />
+    <state x="686" y="226" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603906595980" />
     <state x="2606" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297404346" />
     <state width="1891" height="279" key="GridCell.Tab.0.bottom" timestamp="1603441172298">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -85,9 +93,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1891" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603441172298" />
-    <state width="623" height="498" key="SwitcherDM" timestamp="1603436202672">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1603905497372">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="623" height="498" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603905497372" />
     <state width="623" height="498" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603436202672" />
     <state x="2515" y="61" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603189741121">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -97,6 +106,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2525" y="200" width="710" height="680" key="find.popup/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603286656797" />
+    <state x="514" y="179" width="875" height="663" key="recent.locations.popup" timestamp="1603905490373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="514" y="179" width="875" height="663" key="recent.locations.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1603905490373" />
     <state x="2459" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1602851457583">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

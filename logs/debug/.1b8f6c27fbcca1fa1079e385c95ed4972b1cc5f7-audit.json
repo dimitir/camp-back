@@ -6,29 +6,24 @@
     "auditLog": "C:\\projects\\camp-back\\logs\\debug\\.1b8f6c27fbcca1fa1079e385c95ed4972b1cc5f7-audit.json",
     "files": [
         {
-            "date": 1603112970053,
-            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-19-10-2020.log",
-            "hash": "70334a1a7697856873fc9d511e5bd6c6"
+            "date": 1612194879305,
+            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-01-02-2021.log",
+            "hash": "e54a7c2a0f363ff30649615b62f80cc5"
         },
         {
-            "date": 1603185534677,
-            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-20-10-2020.log",
-            "hash": "935bdb724b7d215c1f61d0405702e223"
+            "date": 1612256227038,
+            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-02-02-2021.log",
+            "hash": "85807688a2641933bca4f2046de2bf1c"
         },
         {
-            "date": 1603268496346,
-            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-21-10-2020.log",
-            "hash": "44805c84e48798e42b76e3af55cd6556"
+            "date": 1612341216864,
+            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-03-02-2021.log",
+            "hash": "07d63c0d0afaef9928d98ffd2950bca0"
         },
         {
-            "date": 1603354516308,
-            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-22-10-2020.log",
-            "hash": "7676d9a02211d592024dd542f2c6bd44"
-        },
-        {
-            "date": 1603436194368,
-            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-23-10-2020.log",
-            "hash": "d5ad2de5d1d76d0c01d2855fc5e0ef77"
+            "date": 1612425512307,
+            "name": "C:\\projects\\camp-back\\logs\\debug\\debug-04-02-2021.log",
+            "hash": "0c9e16b1bc182f959c00e93b65db1a69"
         }
     ]
 }
