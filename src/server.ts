@@ -4,7 +4,7 @@ import bluebird from "bluebird";
 
 mongoose.Promise = bluebird;
 import env, { port, dbConnectionString, jwtSecret } from "./env";
-import { initializeAuthentication } from "./service/auth";
+import { initializeAuthentication } from "./service/user";
 import { applyRoutes } from "./utils";
 import routes from "./service/index";
 import { applyMiddleware } from "./utils";
