@@ -47,12 +47,6 @@ applyMiddleware(errorHandlers, app);
 initializeAuthentication(app);
 applyRoutes(routes, app);
 
-app.get('/user', function (req, res, next) {
-    res.send('USER');
-  });
-
-
-
 process.on("uncaughtException", (e) => {
   logger.error("Error uncaughtException: ", e);
   process.exit(1);
